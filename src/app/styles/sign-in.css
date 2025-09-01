@@ -1,0 +1,15 @@
+/* .form-input {
+    @apply bg-gray-200 border-none my-2 px-4 py-2 text-sm rounded w-full outline-none
+  } */
+
+    /* .form-container button {
+    @apply bg-cyan-700 text-white text-xs px-12 py-2 mt-2 rounded font-semibold uppercase cursor-pointer
+  } */
+
+    .signin-container {
+      @apply absolute top-0 h-full w-full md:w-1/2 left-0 z-[2] transition-all duration-[1.2s] md:duration-500 ease-in-out md:delay-0 delay-[0.4s];
+    }
+
+    .signin-active {
+      @apply translate-y-full md:translate-y-0 md:translate-x-full
+    }

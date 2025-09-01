@@ -1,0 +1,18 @@
+
+    .signup-container {
+      @apply absolute top-0 h-full w-full md:w-1/2 left-0 opacity-0 z-[1] transition-all duration-[1.2s] md:duration-500 md:delay-0 delay-[0.4s] ease-in-out translate-y-full md:translate-y-0;
+    }
+
+    .signup-active {
+      @apply translate-y-0 md:translate-x-full opacity-100 z-[5]
+    }
+
+    
+
+    .social-icons {
+      @apply my-5 flex gap-2 cursor-pointer
+    }
+
+    .social-icons a {
+      @apply border border-gray-300 rounded-full w-10 h-10 flex items-center justify-center
+    }

@@ -1,0 +1,7 @@
+{
+    "pagination":{
+        "page":"Page {pageIndex} Of {pageCount} Total {totalElement}",
+        "prevent":"Prevent",
+        "next":"Next"
+    }
+}

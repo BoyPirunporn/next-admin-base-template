@@ -1,0 +1,7 @@
+.login-container {
+      @apply mx-5 bg-primary rounded-[30px] my-5 border relative overflow-hidden w-[768px] max-w-full min-h-[480px]
+    }
+
+    .form-container {
+      @apply bg-primary-foreground dark:bg-muted dark:text-primary selection:text-primary flex items-center justify-center flex-col px-10 h-full shadow-2xl
+    }

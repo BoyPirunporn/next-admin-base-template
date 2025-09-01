@@ -1,0 +1,59 @@
+.toggle-container {
+      @apply absolute top-0 left-0 md:left-1/2 w-full md:w-1/2 h-full overflow-hidden transition-all duration-500 ease-in-out z-[10]
+    }
+
+    .toggle-active {
+      @apply md:-translate-x-full
+    }
+
+    .toggle-bg {
+      @apply bg-gradient-to-r from-primary/20  to-accent text-white relative -left-full w-[200%] h-full flex transition-all duration-500 ease-in-out
+    }
+
+    .toggle-content {
+      @apply w-1/2 h-full flex flex-col justify-center items-center px-8 text-center transition-all duration-500 ease-in-out
+    }
+
+    /* .toggle-button {
+    @apply cursor-pointer mt-4 border border-white px-8 py-2 rounded text-xs uppercase font-semibold
+  } */
+
+    .toggle-container h1 {
+      @apply text-xl font-bold
+    }
+
+    .toggle-container p {
+      @apply text-sm mt-2
+    }
+
+    .toggle-container-mobile {
+      @apply absolute top-0 left-0 md:left-1/2 w-full md:w-1/2 h-full overflow-hidden z-[10]
+    }
+
+    .toggle-active-mobile {
+      @apply transform md:-translate-x-full rounded-[0_150px_100px_0]
+    }
+
+    .toggle-bg-mobile {
+      @apply bg-gradient-to-r from-indigo-500 to-cyan-600 text-white relative -left-full w-[200%] h-full flex transition-all duration-500 ease-in-out
+    }
+
+    .toggle-content-mobile {
+      @apply w-1/2 h-full flex flex-col justify-center items-center px-8 text-center transition-all translate-y-full visited:hidden duration-500 ease-in-out
+    }
+
+    .toggle-container-mobile h1 {
+      @apply text-xl font-bold
+    }
+
+    .toggle-container-mobile p {
+      @apply text-sm mt-2
+    }
+
+
+    .animate-toggle-mobile {
+      animation: slide-up-fade-out 1.5s ease-in-out forwards;
+      will-change: transform, opacity;
+      visibility: visible;
+      animation-fill-mode: both;
+    }

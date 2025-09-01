@@ -1,0 +1,209 @@
+  /* globals.css */
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+  @import "tailwindcss";
+  @import "tw-animate-css";
+
+  /* themes */
+  @import "./theme-color/default.css";
+  @import "./theme-color/summer.css";
+  @import "./theme-color/spotify.css";
+  @import "./theme-color/material.css";
+  @import "./theme-color/vscode.css";
+  @import "./theme-color/neo.css";
+  @import "./theme-color/pastel.css";
+
+  /* custom style */
+  @import "./styles/toggle.css";
+  @import "./styles/sign-in.css";
+  @import "./styles/sign-up.css";
+  @import "./styles/auth.css";
+  @import "./styles/animation.css";
+  @import "./styles/loader-jump.css";
+
+  @custom-variant dark (&:is(.dark *));
+
+  @keyframes slide-up-fade-out {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    20% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    80% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  @theme inline {
+    /* Success */
+    --success: oklch(0.70 0.20 140);
+    /* สีเขียว */
+    --success-foreground: oklch(0.98 0.01 40);
+
+    /* สีแดง */
+    --destructive-foreground: oklch(0.98 0.01 40);
+    /* ตัวอักษรสีขาว/สว่าง */
+
+    /* Warning */
+    --warning: oklch(0.85 0.20 90);
+    /* สีเหลือง */
+    --warning-foreground: oklch(0.10 0.01 90);
+    /* ตัวอักษรสีเข้ม */
+
+    /* Info */
+    --info: oklch(0.65 0.15 220);
+    /* สีฟ้า */
+    --info-foreground: oklch(0.98 0.02 220);
+    /* ตัวอักษรสีสว่าง */
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
+    --font-serif: var(--font-serif);
+
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+
+    --shadow-2xs: var(--shadow-2xs);
+    --shadow-xs: var(--shadow-xs);
+    --shadow-sm: var(--shadow-sm);
+    --shadow: var(--shadow);
+    --shadow-md: var(--shadow-md);
+    --shadow-lg: var(--shadow-lg);
+    --shadow-xl: var(--shadow-xl);
+    --shadow-2xl: var(--shadow-2xl);
+
+
+
+  }
+
+
+  @theme {
+    --breakpoint-xs: 474px;
+    --breakpoint-sm: 540px;
+    --breakpoint-md: 720px;
+    --breakpoint-lg: 960px;
+    --breakpoint-xl: 1140px;
+    --breakpoint-2xl: 1320px;
+    --animate-toggle: slide-up-fade-out 1.5s ease-in-out both;
+
+    --color-toaster-success: var(--success);
+    --color-toaster-error: var(--destructive);
+    --color-toaster-info: var(--info);
+    --color-toaster-warning: var(--warning);
+    --text-toaster-success: var(--success-foreground);
+    --text-toaster-error: var(--destructive-foreground);
+    --text-toaster-info: var(--info-foreground);
+    --text-toaster-warning: var(--warning-foreground);
+
+    --color-default-primary:  oklch(0.141 0.005 285.823);
+    --color-default-secondary: oklch(0.274 0.006 286.033);
+    --color-default-accent: oklch(0.274 0.006 286.033);
+    --color-default-destructive: oklch(0.704 0.191 22.216);
+
+
+    --color-neo-primary: oklch(0.65 0.24 26.92);
+    --color-neo-secondary: oklch(0.97 0.21 109.74);
+    --color-neo-accent:  oklch(0.56 0.24 260.83);
+    --color-neo-destructive: oklch(0 0 0);
+
+    --color-material-primary: oklch(0.51 0.21 286.50);
+    --color-material-secondary: oklch(0.49 0.04 300.23);
+    --color-material-accent:   oklch(0.92 0.04 303.47);
+    --color-material-destructive:oklch(0.57 0.23 29.21);
+
+    --color-pastel-primary: oklch(0.71 0.16 293.40);
+    --color-pastel-secondary:  oklch(0.91 0.05 306.07);
+    --color-pastel-accent:  oklch(0.94 0.03 322.47);
+    --color-pastel-destructive:oklch(0.81 0.10 19.47);
+
+    --color-spotify-primary: oklch(0.67 0.17 153.85);
+    --color-spotify-secondary:  oklch(0.90 0.02 238.66);
+    --color-spotify-accent:  oklch(0.90 0.02 240.73);
+    --color-spotify-destructive: oklch(0.61 0.24 20.96);
+
+    --color-summer-primary: oklch(0.70 0.17 28.12);
+    --color-summer-secondary: oklch(0.81 0.15 71.81);
+    --color-summer-accent:   oklch(0.64 0.22 28.93);
+    --color-summer-destructive:oklch(0.57 0.20 26.34);
+
+    --color-vscode-primary: oklch(0.71 0.15 239.15);
+    --color-vscode-secondary:  oklch(0.91 0.03 229.20);
+    --color-vscode-accent:  oklch(0.88 0.02 235.72);
+    --color-vscode-destructive:oklch(0.61 0.24 20.96);
+
+
+  }
+
+  @layer components {
+    .shadow-custom {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    }
+
+  }
+
+
+  @layer base {
+    * {
+      @apply border-border outline-ring/50;
+    }
+
+    body {
+      @apply bg-background text-foreground;
+    }
+
+    :disabled {
+      @apply !cursor-not-allowed opacity-50;
+    }
+
+    .toaster li {
+      @apply  data-[type=error]:!bg-destructive data-[type=info]:!bg-toaster-info data-[type=warning]:!bg-toaster-warning data-[type=success]:!bg-green-200 data-[type=success]:!text-green-400 data-[type=default]:!bg-primary;
+    }
+
+  }
